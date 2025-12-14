@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Order - Vastra Online</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Vastra Online</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="order.html">Orders</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="orders">
+        <div class="container">
+            <h2>Place Your Order</h2>
+            <form class="order-form" onsubmit="submitOrder(event)">
+                <div class="form-group">
+                    <label for="product">Select Product:</label>
+                    <select id="product" required>
+                        <option value="">-- Choose a Product --</option>
+                        <option value="KUR-COT-Kids">Cotton - Kids (XS) - $64.99</option>
+                        <option value="KUR-COT-36">Cotton - Size 36 (S) - $64.99</option>
+                        <option value="KUR-COT-38">Cotton - Size 38 (M) - $64.99</option>
+                        <option value="KUR-COT-40">Cotton - Size 40 (L) - $64.99</option>
+                        <option value="KUR-COT-42">Cotton - Size 42 (XL) - $64.99</option>
+                        <option value="KUR-COT-44">Cotton - Size 44 (XXL) - $64.99</option>
+                        <option value="KUR-COT-46">Cotton - Size 46 (XXXL) - $74.99</option>
+                        <option value="KUR-COT-48">Cotton - Size 48 (XXXXL) - $74.99</option>
+                        <option value="KUR-COT-50">Cotton - Size 50 (XXXXXL) - $74.99</option>
+                        <option value="KUR-COT-52">Cotton - Size 52 - $79.99</option>
+                        <option value="KUR-COT-54">Cotton - Size 54 - $79.99</option>
+                        <option value="KUR-GEO-Kids">Geogette - Kids (XS) - $64.99</option>
+                        <option value="KUR-GEO-36">Geogette - Size 36 (S) - $64.99</option>
+                        <option value="KUR-GEO-38">Geogette - Size 38 (M) - $64.99</option>
+                        <option value="KUR-GEO-40">Geogette - Size 40 (L) - $64.99</option>
+                        <option value="KUR-GEO-42">Geogette - Size 42 (XL) - $64.99</option>
+                        <option value="KUR-GEO-44">Geogette - Size 44 (XXL) - $64.99</option>
+                        <option value="KUR-GEO-46">Geogette - Size 46 (XXXL) - $74.99</option>
+                        <option value="KUR-GEO-48">Geogette - Size 48 (XXXXL) - $74.99</option>
+                        <option value="KUR-GEO-50">Geogette - Size 50 (XXXXXL) - $74.99</option>
+                        <option value="KUR-GEO-52">Geogette - Size 52 - $79.99</option>
+                        <option value="KUR-GEO-54">Geogette - Size 54 - $79.99</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" min="1" value="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Shipping Address:</label>
+                    <textarea id="address" rows="3" required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Place Order</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Vastra Online. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

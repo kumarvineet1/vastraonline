@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog - Vastra Online</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Vastra Online</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="order.html">Orders</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="catalog">
+        <div class="container">
+            <h2>Product Catalog</h2>
+            
+            <div class="filters">
+                <label for="fabric-filter">Filter by Fabric:</label>
+                <select id="fabric-filter">
+                    <option value="">All Fabrics</option>
+                    <option value="Cotton">Cotton</option>
+                    <option value="Geogette">Geogette</option>
+                </select>
+
+                <label for="size-filter">Filter by Size:</label>
+                <select id="size-filter">
+                    <option value="">All Sizes</option>
+                    <option value="Kids">Kids</option>
+                    <option value="36">36 (S)</option>
+                    <option value="38">38 (M)</option>
+                    <option value="40">40 (L)</option>
+                    <option value="42">42 (XL)</option>
+                    <option value="44">44 (XXL)</option>
+                    <option value="46">46 (XXXL)</option>
+                    <option value="48">48 (XXXXL)</option>
+                    <option value="50">50 (XXXXXL)</option>
+                    <option value="52">52</option>
+                    <option value="54">54</option>
+                </select>
+
+                <label for="type-filter">Filter by Type:</label>
+                <select id="type-filter">
+                    <option value="">All Types</option>
+                    <option value="Kurti">Kurti</option>
+                    <option value="Dress">Dress</option>
+                    <option value="Shirt">Shirt</option>
+                </select>
+
+                <button id="clear-filters" class="btn">Clear All Filters</button>
+            </div>
+
+            <div class="products-grid" id="products-grid">
+                <!-- Products will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; AutomationAgiliti Inc. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/products.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "vastraonline",
+  "version": "1.0.0",
+  "description": "Vastra Online - Fashion E-commerce Website",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server src -p 8000 -o"
+  },
+  "keywords": ["fashion", "ecommerce", "clothing"],
+  "author": "",
+  "license": "ISC"
+}
